@@ -8,7 +8,6 @@ class ParityChecker {
          }else {
              return false
          }
-
     }
 
     //retorna 2 caminhos para testes unitários (feliz e triste) - true | false;

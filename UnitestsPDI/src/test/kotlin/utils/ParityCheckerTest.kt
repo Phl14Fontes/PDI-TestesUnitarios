@@ -6,12 +6,13 @@ import org.junit.jupiter.api.Test
 
 class ParityCheckerTest {
 
+    private val parityChecker = ParityChecker()
+
     //@Test -> NÃO É uma anotação do spring, e sim do jUnit;
     @Test
     fun `should return true when checking if an even number is even`() {
         // Arrange
         val evenNumber = 8
-        val parityChecker = ParityChecker()
 
         // Act
         val parityCheckResult = parityChecker.isEven(evenNumber)
@@ -24,7 +25,6 @@ class ParityCheckerTest {
     fun `should return true when checking if an odd number is odd`() {
         //Arrange
         val oddNumber = 3
-        val parityChecker = ParityChecker()
 
         //Act
         val parityCheckerResult = parityChecker.isOdd(oddNumber)
@@ -37,7 +37,6 @@ class ParityCheckerTest {
     fun `should return false when checking if an even number is odd`() {
         //Arrange
         val evenNumber = 10
-        val parityChecker = ParityChecker()
 
         //Act
         val parityCheckerResult = parityChecker.isOdd(evenNumber)
@@ -50,7 +49,6 @@ class ParityCheckerTest {
     fun `should return false when checking if a odd number is even`() {
         //Arrange
         val oddNumber = 3
-        val parityChecker = ParityChecker()
 
         //Act
         val parityCheckerResult = parityChecker.isEven(oddNumber)
