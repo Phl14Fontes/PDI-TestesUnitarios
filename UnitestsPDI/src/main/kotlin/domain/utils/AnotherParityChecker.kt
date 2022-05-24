@@ -1,4 +1,4 @@
-package utils
+package domain.utils
 
 class AnotherParityChecker (
     private val value: Int

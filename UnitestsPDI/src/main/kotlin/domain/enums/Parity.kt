@@ -1,4 +1,4 @@
-package enums
+package domain.enums
 
 enum class Parity {
     EVEN,

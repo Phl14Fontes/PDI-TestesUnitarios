@@ -1,7 +1,8 @@
 package service
 
-import enums.Parity
-import gateway.ParityAPIGateway
+import domain.enums.Parity
+import domain.service.ParityCheckerService
+import resources.gateway.ParityAPIGateway
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.jupiter.api.Test

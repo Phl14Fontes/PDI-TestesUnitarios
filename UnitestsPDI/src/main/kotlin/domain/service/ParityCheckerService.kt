@@ -1,7 +1,7 @@
-package service
+package domain.service
 
-import enums.Parity
-import gateway.ParityAPIGateway
+import domain.enums.Parity
+import resources.gateway.ParityAPIGateway
 
 class ParityCheckerService(
     private val parityGateway: ParityAPIGateway

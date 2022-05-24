@@ -1,6 +1,6 @@
-package gateway
+package resources.gateway
 
-import enums.Parity
+import domain.enums.Parity
 
 class ParityAPIGateway {
 
