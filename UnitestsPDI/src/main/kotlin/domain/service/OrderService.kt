@@ -12,7 +12,7 @@ class OrderService {
                 throw InvalidItemAmountException("Invalid amount of items!")
             }
 
-            totalPrice += orderItem.amount * orderItem.product.price()
+            totalPrice += orderItem.totalPrice()
         }
 
         return totalPrice
