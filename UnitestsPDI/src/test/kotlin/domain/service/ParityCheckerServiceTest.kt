@@ -1,4 +1,4 @@
-package service
+package domain.service
 
 import domain.enums.Parity
 import domain.service.ParityCheckerService

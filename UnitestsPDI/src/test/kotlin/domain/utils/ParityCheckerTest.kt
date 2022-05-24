@@ -1,4 +1,4 @@
-package utils
+package domain.utils
 
 import domain.utils.ParityChecker
 import org.junit.jupiter.api.Assertions.assertFalse
