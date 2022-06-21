@@ -5,6 +5,8 @@ import domain.service.ParityCheckerService
 import resources.gateway.ParityAPIGateway
 import io.mockk.every
 import io.mockk.mockk
+import io.mockk.spyk
+import io.mockk.verify
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
@@ -50,6 +52,43 @@ class   ParityCheckerServiceTest {
 
         // Assert
         assertEquals(Parity.ODD, result)
+    }
+
+    @Test
+    fun `should throw mock exception when trying to add to mocked list`() {
+        val mockedList = mockk<MutableList<String>>()
+
+        every { mockedList.add(any()) } returns true
+
+        mockedList.add("one")
+        mockedList.add("two")
+
+        every { mockedList.size } returns 2
+
+        assertEquals(2, mockedList.size)
+    }
+
+    @Test
+    fun `should succeed trying to add to spied list`() {
+        val list = mutableListOf<String>()
+        val spyList = spyk(list)
+
+        spyList.add("one")
+        spyList.add("two")
+
+        // O Spy permite verificação interna do objeto real
+        verify(exactly = 2) { spyList.add(any()) }
+        assertEquals(2, spyList.size)
+    }
+
+    @Test
+    fun `should succeed trying to modify a spied list behavior`() {
+        val list = mutableListOf<String>()
+        val spyList = spyk(list)
+
+        every { spyList.size } returns 2
+
+        assertEquals(2, spyList.size)
     }
 
 }
