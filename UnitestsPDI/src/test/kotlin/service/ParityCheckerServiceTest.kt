@@ -1,14 +1,13 @@
-package domain.service
+package service
 
-import domain.enums.Parity
-import domain.service.ParityCheckerService
-import resources.gateway.ParityAPIGateway
+import enums.Parity
+import gateway.ParityAPIGateway
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class   ParityCheckerServiceTest {
+class ParityCheckerServiceTest {
 
     // Aqui criamos o mock da classe ParityAPIGateway, a marionete que vai nos obedecer
     private val mockedParityAPIGateway: ParityAPIGateway = mockk()
