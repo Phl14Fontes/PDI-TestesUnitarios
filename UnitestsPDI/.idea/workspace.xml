@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e66b13c-ac4f-43e6-93d0-67dae4de1638" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/Order.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/model/Order.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +77,8 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ProductServiceTest.if the service calls the repository when saving the product (1)">
-    <configuration name="ParityCheckerTest.should return false when checking if a odd number is even" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.OrderServiceTest">
+    <configuration name="OrderServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -89,7 +91,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;utils.ParityCheckerTest.should return false when checking if a odd number is even&quot;" />
+            <option value="&quot;domain.service.OrderServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -99,7 +101,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ParityCheckerTest.should return false when checking if an even number is odd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderServiceTest.If given an order, the total value calculation is done correctly (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -112,7 +114,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;utils.ParityCheckerTest.should return false when checking if an even number is odd&quot;" />
+            <option value="&quot;domain.service.OrderServiceTest.If given an order, the total value calculation is done correctly&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderServiceTest.If the quantity of an order item is less than 1 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;domain.service.OrderServiceTest.If the quantity of an order item is less than 1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,35 +193,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ParityCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PedrinPDI.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.ParityCheckerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Gradle.ParityCheckerTest.should return false when checking if an even number is odd" />
-      <item itemvalue="Gradle.ParityCheckerTest.should return false when checking if a odd number is even" />
-      <item itemvalue="JUnit.ParityCheckerTest" />
       <item itemvalue="Gradle.ProductServiceTest.if the service calls the repository" />
       <item itemvalue="Gradle.ProductServiceTest.if the service calls the repository when saving the product (1)" />
+      <item itemvalue="Gradle.OrderServiceTest.If given an order, the total value calculation is done correctly (1)" />
+      <item itemvalue="Gradle.OrderServiceTest.If the quantity of an order item is less than 1 (1)" />
+      <item itemvalue="Gradle.OrderServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderServiceTest" />
+        <item itemvalue="Gradle.OrderServiceTest.If the quantity of an order item is less than 1 (1)" />
+        <item itemvalue="Gradle.OrderServiceTest.If given an order, the total value calculation is done correctly (1)" />
         <item itemvalue="Gradle.ProductServiceTest.if the service calls the repository when saving the product (1)" />
         <item itemvalue="Gradle.ProductServiceTest.if the service calls the repository" />
-        <item itemvalue="JUnit.ParityCheckerTest" />
-        <item itemvalue="Gradle.ParityCheckerTest.should return false when checking if a odd number is even" />
-        <item itemvalue="Gradle.ParityCheckerTest.should return false when checking if an even number is odd" />
       </list>
     </recent_temporary>
   </component>
